@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to top,red,purple);
+    background-repeat: no-repeat;
+}
+.table-container{
+    width: 600px;
+    max-width: 90%;
+    background: linear-gradient(to right, #00c99a,#00e0b3);
+}
