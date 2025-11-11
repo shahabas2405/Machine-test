@@ -1,0 +1,15 @@
+.main-content{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto;
+}
+.sidebar{
+    background-color: black;
+    height: 100vh;
+    
+}
+.sidebar a{
+    text-decoration: none;
+    color: white;
+
+}

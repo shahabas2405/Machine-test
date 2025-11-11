@@ -1,0 +1,50 @@
+.content{
+    padding-left: 50px;
+    background-color: rgba(255, 0, 0, 0.564);
+    height: 120px;
+}
+.menu{
+    color: aqua;
+    font-size: larger;
+    font-weight: bold;
+}
+.hero-section {
+    height: 60vh;
+}
+/* Service Box Styles */
+.service-box {
+    background-color: white;
+    transition: all 0.3s ease;
+    border: 1px solid #dee2e6;
+}
+
+/* Hover Effect for Service Boxes */
+.service-box:hover {
+    background-color: #e9ecef;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12) !important;
+}
+
+/* Specific background colors for visual distinction (optional) */
+.service-box[data-service="web"] {
+    border-top: 5px solid #007bff;
+    background-color: beige;
+    color:#007bff ;
+}
+
+.service-box[data-service="app"] {
+    border-top: 5px solid #28a745;
+    background-color: beige;
+    color: #28a745;
+}
+
+.service-box[data-service="cloud"] {
+    border-top: 5px solid #ffc107; 
+    background-color: beige;
+    color: #ffc107;
+}
+button{
+    color: black;
+    background-color: blueviolet;
+    border: none;
+}
