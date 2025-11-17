@@ -1,0 +1,83 @@
+/* navbar */
+body{
+    background-color: rgb(220, 215, 215) !important;
+}
+.navbar{
+    background-color: rgb(6, 6, 15);
+    padding: 1rem 0;
+}
+.navbar h1{
+    color: white;
+    font-size: 2rem;
+}
+/*form-list */
+.form-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    margin: 2rem 2rem;
+}
+.student-form{
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: white;
+}
+.student-form h3{
+    background-color: lightblue;
+    padding: 1rem;
+}
+.student-list{
+    border-radius: 5px;
+    background-color: white;
+}
+.student-list h3{
+    background-color: lightgreen;
+    padding: 1rem;
+}
+.stud-name{
+    border-radius: 4px;
+    background-color: rgb(225, 220, 220);
+    padding-left: 1rem;
+}
+.student-form form{
+    padding: 2rem;
+}
+#forms button{
+    display: block;
+    margin: 0 auto;
+}
+
+.student-details{
+    background-color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    
+}
+.student-details h3{
+    background-color: wheat;
+    padding: 1rem;
+    text-align: center;
+}
+.details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+}
+.left-content{
+    margin-left: 2rem;
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+#update{
+    background-color: wheat;
+    border: none;
+}
+#delete{
+    background-color: lightblue;
+    border: none;
+}
