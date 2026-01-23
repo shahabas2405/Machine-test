@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>📝 To-Do Manager</h1>
+    <style>
+        h1{
+            text-align: center;
+            color: black;
+        }
+        .card-content{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 2rem;
+        }
+        .cardCustom{
+            border: 1px solid black;
+            border-radius: 2rem;
+            text-align: center;
+            padding: 1rem;
+            width: 23rem;
+        }
+        .cardCustom img{
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+        .completed{
+            background-color: rgb(27, 200, 27);
+        }
+        .not-completed{
+            background-color: rgb(245, 25, 25);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="card-content" id="cardContainer"></div>
+    </div>
+
+
+    <script>
+        fetch("https://jsonplaceholder.typicode.com/todos")
+        .then(response => response.json())
+        .then(data => {
+            const cardContainer = document.getElementById("cardContainer");
+            cardContainer.innerHTML = data.slice(0,12).map(user => `
+                <div class="cardCustom ${user.completed? 'completed': 'not-completed'}">
+                        <img src="https://sp.yimg.com/ib/th/id/OIP.-bgUD6TvLX3d2eFG6lU3PgHaHa?pid=Api&w=148&h=148&c=7&dpr=2&rs=1">
+                        <h5>${user.title}</h5> 
+                        <p>
+                            <strong>Status: </strong>${user.completed? 'completed': 'not-completed'}<br>
+                        </p>   
+                </div>
+            `).join("");
+        }).catch(console.error(error));
+    </script>
+</body>
+</html>
